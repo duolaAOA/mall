@@ -29,7 +29,7 @@ public class CategoryServiceImpl implements ICategoryService {
         if (parentId == null || StringUtils.isBlank(categoryName)){
             return ServerResponse.createByErrorMessage("添加品类参数错误");
         }
-
+        System.out.println(CategoryServiceImpl.class);
         Category category = new Category();
         category.setName(categoryName);
         category.setParentId(parentId);
