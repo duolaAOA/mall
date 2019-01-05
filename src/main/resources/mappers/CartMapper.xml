@@ -125,7 +125,7 @@
         where user_id = #{userId}
         and product_id = #{productId}
     </select>
-    
+
 
     <select id="selectCartByUserId" resultMap="BaseResultMap" parameterType="int">
         SELECT
